@@ -1,0 +1,6 @@
+<form>
+  <input #cep type="text" id="cep">
+  <button (click)="onClickSearchEndereco(cep.value)" type="button">Achar</button>
+</form>
+
+<app-detalhes-cep [endereco]="enderecoEncontrado"></app-detalhes-cep>
